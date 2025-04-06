@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/116339479019986de0c2dec80add478b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.chess {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 13px;
+    margin-top: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgb(0, 204, 255);
+    outline: none;
+}
+
+#Submit {
+    color: transparent;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#Submit:hover {
+    background-color: rgba(0, 204, 255, 0.6);
+}
+
+#matn {
+    margin-top: 20px;
+    color: green;
+    font-size: 18px;
+}
+
+#mat {
+    margin-top: 20px;
+    color: red;
+    font-size: 18px;
+}
+
+.spans {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spans span {
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+.spans a {
+    color: white;
+    text-decoration: none;
+}
+
+.spans a:hover {
+    color: #00ccff;
+}
+
+#loading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .chess {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+    .spans {
+        font-size: 14px;
+    }
+    .spans span {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chess {
+        width: 90%;
+        max-width: 300px;
+    }
+    input,
+    #Submit {
+        width: 100%;
+    }
+    .spans {
+        font-size: 12px;
+    }
+    .spans span {
+        margin-left: 10px;
+    }
+}
